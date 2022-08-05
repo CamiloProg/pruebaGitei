@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- icono de la pestaña -->
+    <title>Prueba Gitei</title>
+    <link rel="icon" href="./images/iconoUniversidad.png">
+
+<!-- Se importa el bootstrap y los estilos -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- main -->
+    <main id="main">
+    <div class="container-fluid">
+      <div class="row">            
+        <div class="col-12 col-lg-12 mt-5 text-center">
+        <h1>Prueba Tecnica</h1>
+        </div>
+      </div>
+<!-- Se crean 2 columnas, una para la card y otra para el formulario -->
+<!-- Card -->
+        <div class="row justify-content-evenly ">
+          <div class="card ps-0 pe-0" style="width: 20rem;">
+            <img src="./images/profile.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Perfil</h5>
+              <p class="card-text">Este sera tu nueva Card en esta universidad.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li id="nameFull" class="list-group-item">Nombre</li>
+              <li id="lastnameFull" class="list-group-item">Apellido</li>
+              <li id="cedulaFull" class="list-group-item">Cedula</li>
+            </ul>
+            <div class="card-body">
+            </div>
+          </div>
+              <div class="col-12 mt-5 col-lg-3">
+<!-- Formulario -->
+                <form id="form">
+                  <div class="mb-2">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                      elit, sed diam nonummy nibh euismod tincidunt ut 
+                      laoreet dolore magna aliquam erat volutpat. Ut wisi 
+                      enim ad minim veniam.</p>
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-text" id="nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-text" id="apellido">
+                  </div>
+                  <div class="mb-3">
+                    <label for="cedula" class="form-label">Cedula de ciudadania</label>
+                    <input type="text" class="form-text" id="cedula">
+                    <a href="">¿Lorem ipsum dolor sit amet?</a>
+                  </div>
+                  <div style="text-align: center;">
+<!-- Boton que al presionar ejecuta la funcion de JavaScript -->
+                  <input type="button" onclick="getInfo()" value="Ingresar datos" class="btn-yellow"></input>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+<!-- main -->
+      
+<!-- footer -->
+      <footer id="footer">
+        <div class="container justify-content-start">
+        <div class="row">
+          <div class="col-12 col-lg-8 pt-5">
+          <h3 class="ps-2">Informacion</h3>
+          <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
+            enim ad minim veniam.</p>
+        </div>
+        <div class="col-12 text-center text-md-start">
+          <a href="">¿Lorem ipsum dolor sit amet?</a>
+          <br>
+<!-- Este boton abre un apartado en forma de modal para implementar algo nuevo en un futuro -->
+          <button class="btn-yellow-info" data-bs-toggle="modal" data-bs-target="#modalClose">Lorem, ipsum dolor.</button>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="social col-12 mb-5">
+<!-- Se agregan los iconos con un "a" para poder redirigir a las paginas oficiales -->
+          <a href="https://twitter.com/UNALOficial"><img src="./images/twitter.png" alt=""></a>
+          <a href="https://www.youtube.com/channel/UCnE6Zj2llVxcvL5I38B0Ceg"><img src="./images/youtube.png" alt=""></a>
+          <a href="https://web.facebook.com/UNALOficial?_rdc=1&_rdr"><img src="./images/facebook.png" alt=""></a>
+          </div>
+        </div>
+ <!-- Apartado para el logo de la universidad al final de la pagina --> 
+          <hr>
+          <div style="text-align: center;">
+          <img src="./images/logo-universidad.png" alt="">
+        </div>
+        </div>
+        </div> 
+      </div>
+      </footer>
+<!-- footer -->
+        
+<!-- Modal -->
+<!-- Aqui esta todo lo necesario para que funcione el modal y el boton de cerrar -->
+      <div class="modal fade" id="modalClose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center" >
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet.</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis asperiores dicta quam ad illo totam sint aliquam est nisi, molestias eos porro eveniet quisquam!
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Modal -->
+
+    <!-- Scripts necesarios para recopilar las nuevas opciones y herramientas de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Se importa el JavaScript necesario para los botones -->
+    <script src="./src/index.js"></script>
+  </body>
+</html> 

@@ -1,0 +1,114 @@
+
+// Variables (Por si tenemos que cambiar un color principal, 
+//            haqcerlo mucho mas sencillo en el futuro)
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Thin.ttf);
+    font-family: Roboto-light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+$main-color: #F0F0EE;
+$secondary-color:#FFAA2D;
+$footer-color: #565A5C;
+// Variables
+
+// ButtonStyle
+.btn-yellow{
+    background-color: $secondary-color;
+    color: $main-color;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    height: 40px;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+.btn-yellow:hover, .btn-yellow-info:hover {
+    background-color:orange;
+    color: $footer-color;
+
+}
+.btn-yellow-info{
+    background-color: $secondary-color;
+    color: $main-color;
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// ButtonStyle
+
+// mainStyle
+
+#main{
+    padding-top: 20px;
+    padding-bottom: 200px;
+    background-color: $main-color;
+    font-family: Roboto-light;
+    font-weight: 500;
+}
+#main .row{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#main .row h1{
+    font-size: 3em ;
+    font-weight: bolder;
+    font-style: oblique;
+}
+#main .row p{
+    font-size: 1em;
+}
+#main a{
+    color: $footer-color;
+    font-weight: bolder;
+    font-size: large;
+}
+#main input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 12px;
+}
+#form label{
+    font-size: 1.5em !important;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+// footerStyle
+
+#footer{
+    background-color: $footer-color;
+    color: $main-color;
+    font-size: large;
+}
+#footer .social{
+    border-left: 4px solid $main-color;
+}
+#footer .social a{
+    padding-right: 12px;
+    padding-left: 12px;
+}
+#footer a{
+    color: $main-color;
+    font-weight: bolder;
+}
+#footer h3{
+    font-weight: 100;
+    border-left: 5px solid $secondary-color;
+}
+// footerStyle
+
+// media (Para los dispositivos pequeños)
+@media (max-width:767px) {
+    #footer .social{
+        border: none;
+    }
+}
